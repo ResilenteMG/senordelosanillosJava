@@ -12,7 +12,7 @@ Se ha completado la arquitectura base utilizando tres niveles de profundidad par
 * **Nivel 1 (Verde)**: Superclase `CHARACTERS` con atributos globales.
 * **Nivel 2 (Naranja)**: Subclases por razas que heredan de la clase superior.
 * **Nivel 3 (Blanco)**: Objetos específicos (personajes) vinculados a sus razas.
-
+  
 ### 📋 Estructura de Datos
 El diagrama cuenta actualmente con los siguientes componentes integrados:
 
@@ -30,7 +30,62 @@ El diagrama cuenta actualmente con los siguientes componentes integrados:
 * **Alineación**: Se utilizó una disposición en cascada para optimizar el espacio y facilitar la lectura técnica.
 
 ---
-*Este proyecto fue desarrollado como parte de la tarea práctica de Modelado de Software.*
+# 📜 Jerarquía de Personajes de la Tierra Media
+
+Este proyecto es una implementación práctica de los pilares fundamentales de la **Programación Orientada a Objetos (POO)** en Java. A través del universo de "El Señor de los Anillos", se demuestra cómo la estructura de clases permite organizar y especializar datos de forma eficiente.
+
+---
+
+## 🏗️ Arquitectura del Proyecto (Los 3 Niveles)
+
+El sistema se organiza en una jerarquía de tres niveles, permitiendo una transición fluida desde lo general a lo específico:
+
+### 🟢 Nivel 1: Superclase (`Character.java`)
+Es la raíz de la jerarquía. Define los atributos comunes que comparten todos los seres:
+* `name`, `age`, `height` y `strength`.
+* Establece el método base `printDetails()` que será utilizado por el polimorfismo.
+
+### 🟠 Nivel 2: Subclases (Razas)
+Archivos individuales que extienden a la superclase, añadiendo características únicas por raza:
+* **Human**: Reino y Linaje noble.
+* **Elf**: Destreza y Habilidad con el arco.
+* **Dwarf**: Largo de barba y Habilidad minera.
+* **Hobbit**: Sigilo y Cantidad de comidas diarias.
+* **Wizard**: Poder mágico y Color de báculo.
+
+### 🔵 Nivel 3: Instanciación (`Main.java`)
+El punto de entrada donde se crean los **15 objetos reales** (3 por cada raza). Aquí es donde los "planos" se convierten en personajes con datos concretos.
+
+---
+
+## 🛠️ Pilares de POO Implementados
+
+| Pilar | Aplicación en el Código |
+| :--- | :--- |
+| **Herencia** | Uso de la palabra clave `extends` para heredar atributos de `Character`. |
+| **Encapsulamiento** | Atributos `private` protegidos por métodos `public` (Getters y Setters). |
+| **Polimorfismo** | Uso de `@Override` en `printDetails()` para que cada raza se presente de forma distinta. |
+| **Abstracción** | Modelado de personajes complejos en atributos esenciales para el software. |
+
+---
+
+## 🚀 Cómo ejecutar el proyecto
+
+1.  Asegurarse de tener instalado el **JDK** (Java Development Kit).
+2.  Importar la carpeta `src` en **IntelliJ IDEA**.
+3.  Verificar que los 6 archivos de clases (`Character`, `Human`, `Elf`, `Dwarf`, `Hobbit`, `Wizard`) y el `Main` estén presentes.
+4.  Ejecutar la clase `Main.java`.
+
+> [!IMPORTANT]
+> La salida por consola mostrará a los 15 personajes organizados, demostrando que el sistema reconoce automáticamente la especialidad de cada uno.
+
+<img width="500" height="1000" alt="Añadir un título" src="https://github.com/user-attachments/assets/435ee9d0-b813-44a3-a67f-fcf9c3149ce4" />
+
+---
+
+### ✍️ Notas de la Autora
+*"Este proyecto refleja un aprendizaje incremental: desde el diseño de la superclase hasta la prueba de fuego en el Main, validando cada paso mediante el testeo constante de objetos."*
+*Este proyecto fue desarrollado como parte de la tarea práctica de Modelado de Software JAVA.*
 
 
 
