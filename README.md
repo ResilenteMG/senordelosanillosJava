@@ -76,7 +76,7 @@ El punto de entrada donde se crean los **15 objetos reales** (3 por cada raza). 
 3.  Verificar que los 6 archivos de clases (`Character`, `Human`, `Elf`, `Dwarf`, `Hobbit`, `Wizard`) y el `Main` estén presentes.
 4.  Ejecutar la clase `Main.java`.
 
-> [!IMPORTANT]
+> [!IMPORTANTE]
 > La salida por consola mostrará a los 15 personajes organizados, demostrando que el sistema reconoce automáticamente la especialidad de cada uno.
 
 <img width="500" height="1000" alt="Añadir un título" src="https://github.com/user-attachments/assets/435ee9d0-b813-44a3-a67f-fcf9c3149ce4" />
